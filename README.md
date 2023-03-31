@@ -58,27 +58,9 @@ module.exports = ({ context, onGetWebpackConfig }) => {
 
 Allowed values are as follows:
 
-|   Name    |Type|  Default   | Description                                             |
-|:---------:|:--:|:----------:|:--------------------------------------------------------|
-| **`tag`** |`{String|String[]}` |``| The html tag css selector that need load style next to. If more than one is provided, the first found element takes precedence. |
-
-Here's an example webpack config illustrating how to use these options
-
-**webpack.config.js**
-```js
-{
-  entry: 'index.js',
-  output: {
-    path: __dirname + '/dist',
-    filename: 'index_bundle.js'
-  },
-  plugins: [
-    new LoadChunkStyleNextToTagWebpackPlugin({
-      tag: 'link[href*=abc]'
-    })
-  ]
-}
-```
+|   Name    |         Type         |  Default   | Description                                             |
+|:---------:|:--------------------:|:----------:|:--------------------------------------------------------|
+| **`tag`** | `{String\|String[]}` |``| The html tag css selector that need load style next to. If more than one is provided, the first found element takes precedence. |
 
 [npm]: https://img.shields.io/npm/v/load-chunk-style-next-to-tag-webpack-plugin.svg
 [npm-url]: https://npmjs.com/package/load-chunk-style-next-to-tag-webpack-plugin
