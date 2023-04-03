@@ -6,6 +6,22 @@
   <p>Plugin that make sure chunk style is load next to your main css file, avoid affecting style priority.</p>
 </div>
 
+<h2 align="center">Example</h2>
+
+```html
+<html>
+<head>
+  <link href="/path/to/your/main.css" />
+  <!-- make sure chunk style is load next to your main css file -->
+  <link href="/path/to/your/chunk-1.css" load-chunk-style-next-to-tag="group" />
+  <link href="/path/to/your/chunk-2.css" load-chunk-style-next-to-tag="group" />
+  <!-- avoid affecting style priority -->
+
+  <link href="/path/to/your/other.css" />
+</head>
+</html>
+```
+
 <h2 align="center">Install</h2>
 
 ```bash
