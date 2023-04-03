@@ -35,6 +35,7 @@ module.exports = {
   },
   plugins: [
     new LoadChunkStyleNextToTagWebpackPlugin({
+      group: 'abc',
       tag: 'link[href*=abc]'
     })
   ]
@@ -47,6 +48,7 @@ module.exports = ({ context, onGetWebpackConfig }) => {
   onGetWebpackConfig((config) => {
 
     config.plugin('load-chunk-style-next-to').use(LoadChunkStyleNextToTagWebpackPlugin, [{
+      group: 'abc',
       tag: 'link[href*=abc]',
     }]);
 
@@ -58,9 +60,10 @@ module.exports = ({ context, onGetWebpackConfig }) => {
 
 Allowed values are as follows:
 
-|   Name    |         Type         |  Default   | Description                                             |
-|:---------:|:--------------------:|:----------:|:--------------------------------------------------------|
-| **`tag`** | `{String\|String[]}` |``| The html tag css selector that need load style next to. If more than one is provided, the first found element takes precedence. |
+|    Name     |         Type         |  Default   | Description                                                                                                                     |
+|:-----------:|:--------------------:|:----------:|:--------------------------------------------------------------------------------------------------------------------------------|
+| **`group`** | `{String}` |``| Grouping in multiple configurations on the same page.                                                                           |
+|  **`tag`**  | `{String\|String[]}` |``| The html tag css selector that need load style next to. If more than one is provided, the first found element takes precedence. |
 
 [npm]: https://img.shields.io/npm/v/load-chunk-style-next-to-tag-webpack-plugin.svg
 [npm-url]: https://npmjs.com/package/load-chunk-style-next-to-tag-webpack-plugin
