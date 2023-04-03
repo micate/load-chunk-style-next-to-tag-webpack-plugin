@@ -3,7 +3,7 @@
 
 <div align="center">
   <h1>LoadChunkStyleNextToTag Webpack Plugin</h1>
-  <p>Plugin that make sure chunk style is load next to your main css file, avoid affecting style priority.</p>
+  <p>This is a [webpack](http://webpack.js.org/) plugin that make sure chunk style is load next to your main css file, avoid affecting style priority.</p>
 </div>
 
 <h2 align="center">Example</h2>
@@ -31,9 +31,6 @@
 ```bash
   yarn add --dev load-chunk-style-next-to-tag-webpack-plugin
 ```
-
-
-This is a [webpack](http://webpack.js.org/) plugin that make sure chunk style is load next to your main css file, avoid affecting style priority.
 
 <h2 align="center">Usage</h2>
 
