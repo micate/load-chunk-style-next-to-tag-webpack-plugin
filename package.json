@@ -1,6 +1,6 @@
 {
   "name": "load-chunk-style-next-to-tag-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "Make sure chunk style is load next to your main css file, avoid affecting style priority.",
   "author": "micate <micate@me.com> (https://github.com/micate)",
